@@ -9,8 +9,10 @@ import hashlib
 import hmac
 import json
 import os
+import Levenshtein
+import re
 import time
-
+import editdistance
 import requests
 
 lfasr_host = 'http://raasr.xfyun.cn/api'
@@ -195,12 +197,37 @@ class RequestApi(object):
             # 每次获取进度间隔20S
             time.sleep(20)
         # 5 . 获取结果
-        self.get_result_request(taskid=taskid)
-
+        print(type(self.get_result_request(taskid=taskid)['data']))
+        result = self.get_result_request(taskid=taskid)['data']
+        print(result)
+        result = json.loads(result)
+        # exit()
+        # result = self.get_result_request(taskid=taskid)
+        total = ""
+        for elem in result:
+            print(elem)
+            total +=elem["onebest"]
+            pass
+        print("my result:", result)
+        # print(total)
+        return total
 
 # 注意：如果出现requests模块报错："NoneType" object has no attribute 'read', 请尝试将requests模块更新到2.20.0或以上版本(本demo测试版本为2.20.0)
 # 输入讯飞开放平台的appid，secret_key和待转写的文件路径
+
+
 if __name__ == '__main__':
-    api = RequestApi(appid="5b67db1f", secret_key="9a83c6206432b768d3fb6f5073b876b4",
-                     upload_file_path=r"BB_k_5/wav-batch_000_sentence_000-linear.wav")
-    api.all_api_request()
+    origin_sent = "它的宽大的叶子也是片片向上"
+    api = RequestApi(appid="5b67db1f", secret_key="0baad162ea27c5a1c2a0e6cbe727df8f",
+                     upload_file_path=r"k_5_mos_wavs/wav-batch_019_sentence_000-linear.wav")
+    generate_sent = api.all_api_request()
+    preprocess_sent = re.sub("[\s+\.\!\/_，。,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "", generate_sent)
+    origin_sent = re.sub("[\s+\.\!\/_，・《“。》,”$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "", origin_sent)
+
+    print(preprocess_sent)
+    print(origin_sent)
+    for i, j in zip(preprocess_sent, origin_sent):
+        if i != j:
+            print(i, j)
+    bb = editdistance.eval(preprocess_sent, origin_sent)
+    print(bb)
