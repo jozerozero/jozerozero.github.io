@@ -59,12 +59,6 @@
     "image": "publication-figures/2025-12-13-from-orthogonality-to-dependency-learning-disentangled-representation-for-multi-modal-time.png",
     "selection": "page 2: Figure 1: Illustration of physiological indicators of diabetics,"
   },
-  "2025-12-15-identification-of-nonparametric-dynamic-causal-structure-and-latent-process-in-climate-sys": {
-    "title": "Identification of nonparametric dynamic causal structure and latent process in climate system",
-    "pdf_url": "https://arxiv.org/pdf/2501.12500.pdf",
-    "image": "publication-figures/2025-12-15-identification-of-nonparametric-dynamic-causal-structure-and-latent-process-in-climate-sys.png",
-    "selection": "page 2: Figure 1: From climate system to causal graph.  x t  represent observed data and  z t  denotes unobserved"
-  },
   "2025-12-19-disentangling-long-short-term-state-under-unknown-interventions-for-online-time-series-for": {
     "title": "Disentangling Long-Short Term State Under Unknown Interventions for Online Time Series Forecasting",
     "pdf_url": "https://arxiv.org/pdf/2502.12603.pdf",
@@ -130,5 +124,11 @@
     "pdf_url": "https://proceedings.neurips.cc/paper/2021/file/cfc5d9422f0c8f8ad796711102dbe32b-Paper.pdf",
     "image": "publication-figures/2021-12-30-domain-adaptation-with-invariant-representation-learning-what-transformations-to-learn.png",
     "selection": "page 2: Figure 1:  The underlying data-"
+  },
+  "2026-12-30-identification-of-nonparametric-dynamic-causal-structure-and-latent-process-in-climate-sys": {
+    "title": "Identification of nonparametric dynamic causal structure and latent process in climate system",
+    "pdf_url": "https://arxiv.org/pdf/2501.12500.pdf",
+    "image": "publication-figures/2026-12-30-identification-of-nonparametric-dynamic-causal-structure-and-latent-process-in-climate-sys.png",
+    "selection": "page 2: Figure 1: From climate system to causal graph.  x t  represent observed data and  z t  denotes unobserved"
   }
 }

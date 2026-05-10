@@ -37,10 +37,12 @@
     </h3>
 
     {% if pub.authors %}
-      {% assign highlighted_authors = pub.authors | replace: "Zijian Li", "<strong class=\"minimal-publication__self\">Zijian Li</strong>" %}
+      {% capture self_author %}<strong class="minimal-publication__self">Zijian Li</strong>{% endcapture %}
+      {% assign highlighted_authors = pub.authors | replace: "Zijian Li", self_author %}
       <p class="minimal-publication__authors">{{ highlighted_authors }}</p>
     {% elsif pub.citation %}
-      {% assign highlighted_citation = pub.citation | replace: "Zijian Li", "<strong class=\"minimal-publication__self\">Zijian Li</strong>" %}
+      {% capture self_author %}<strong class="minimal-publication__self">Zijian Li</strong>{% endcapture %}
+      {% assign highlighted_citation = pub.citation | replace: "Zijian Li", self_author %}
       <p class="minimal-publication__authors">{{ highlighted_citation }}</p>
     {% endif %}
 
