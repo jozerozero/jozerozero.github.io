@@ -31,7 +31,14 @@ layout: default
   {% if page.services %}
     <section class="minimal-home__section minimal-home__services-first" aria-labelledby="services-heading">
       <div class="minimal-home__section-head">
-        <h2 id="services-heading">Services</h2>
+        <h2 id="services-heading">
+          <span class="minimal-section-icon minimal-section-icon--services" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 7h16M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7m-9 4 2 2 4-4m-9-2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7" />
+            </svg>
+          </span>
+          Services
+        </h2>
       </div>
       <div class="minimal-services">
         {% for group in page.services %}
@@ -49,7 +56,17 @@ layout: default
   {% endif %}
 
   {% if page.intro %}
-    <section class="minimal-home__section minimal-home__intro">
+    <section class="minimal-home__section minimal-home__intro" aria-labelledby="about-heading">
+      <div class="minimal-home__section-head minimal-home__section-head--compact">
+        <h2 id="about-heading">
+          <span class="minimal-section-icon minimal-section-icon--about" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0" />
+            </svg>
+          </span>
+          About
+        </h2>
+      </div>
       {% for paragraph in page.intro %}
         <p>{{ paragraph | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endfor %}
@@ -66,13 +83,21 @@ layout: default
   {% if page.news %}
     <section class="minimal-home__section" aria-labelledby="news-heading">
       <div class="minimal-home__section-head">
-        <h2 id="news-heading">News</h2>
+        <h2 id="news-heading">
+          <span class="minimal-section-icon minimal-section-icon--news" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Zm4.3 12a2 2 0 0 0 3.4 0" />
+            </svg>
+          </span>
+          News
+        </h2>
       </div>
       <ol class="minimal-news">
         {% for item in page.news %}
           <li>
+            <span class="minimal-news__icon" aria-hidden="true">🍾</span>
             <time>{{ item.date }}</time>
-            <span>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            <span class="minimal-news__text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
           </li>
         {% endfor %}
       </ol>
@@ -81,8 +106,15 @@ layout: default
 
   <section class="minimal-home__section" aria-labelledby="publications-heading">
     <div class="minimal-home__section-head">
-      <h2 id="publications-heading">{{ page.publications_title | default: "Publications" }}</h2>
-      <a href="{{ '/publications/' | relative_url }}">All papers</a>
+      <h2 id="publications-heading">
+        <span class="minimal-section-icon minimal-section-icon--publications" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v17H6.5A2.5 2.5 0 0 0 4 22V5.5Zm16 0A2.5 2.5 0 0 0 17.5 3H13v17h4.5A2.5 2.5 0 0 1 20 22V5.5Z" />
+          </svg>
+        </span>
+        {{ page.publications_title | default: "Publications" }}
+      </h2>
+      <a class="minimal-home__section-action" href="{{ '/publications/' | relative_url }}">All papers &rarr;</a>
     </div>
 
     {% assign sorted_publications = site.publications | sort: "date" | reverse %}

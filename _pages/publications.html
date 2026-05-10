@@ -10,9 +10,16 @@ author_profile: false
 <main class="minimal-home minimal-home--subpage" role="main">
   <section class="minimal-home__section minimal-home__intro">
     <div class="minimal-home__section-head">
-      <h1 class="page__title">Publications</h1>
+      <h1 class="page__title minimal-page-title">
+        <span class="minimal-section-icon minimal-section-icon--publications" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v17H6.5A2.5 2.5 0 0 0 4 22V5.5Zm16 0A2.5 2.5 0 0 0 17.5 3H13v17h4.5A2.5 2.5 0 0 1 20 22V5.5Z" />
+          </svg>
+        </span>
+        Publications
+      </h1>
       {% if site.author.googlescholar %}
-        <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+        <a class="minimal-home__section-action" href="{{ site.author.googlescholar }}">Google Scholar &rarr;</a>
       {% endif %}
     </div>
   </section>
@@ -39,7 +46,10 @@ author_profile: false
           {% unless current_year == "" %}
             </div>
           {% endunless %}
-          <h2 class="minimal-year">{{ post_year }}</h2>
+          <h2 class="minimal-year">
+            <span class="minimal-year__dot" aria-hidden="true"></span>
+            {{ post_year }}
+          </h2>
           <div class="minimal-publications minimal-publications--year">
           {% assign current_year = post_year %}
         {% endif %}
