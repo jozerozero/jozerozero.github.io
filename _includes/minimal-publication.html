@@ -37,9 +37,11 @@
     </h3>
 
     {% if pub.authors %}
-      <p class="minimal-publication__authors">{{ pub.authors }}</p>
+      {% assign highlighted_authors = pub.authors | replace: "Zijian Li", "<strong>Zijian Li</strong>" %}
+      <p class="minimal-publication__authors">{{ highlighted_authors }}</p>
     {% elsif pub.citation %}
-      <p class="minimal-publication__authors">{{ pub.citation }}</p>
+      {% assign highlighted_citation = pub.citation | replace: "Zijian Li", "<strong>Zijian Li</strong>" %}
+      <p class="minimal-publication__authors">{{ highlighted_citation }}</p>
     {% endif %}
 
     {% if pub.excerpt %}
