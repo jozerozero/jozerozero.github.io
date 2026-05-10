@@ -39,6 +39,6 @@ services:
   - title: "Professional Service"
     items:
       - "Area Chair: for ICLR 2026, NeurIPS 2026."
-      - "Conference Reviewer / Program Committee Member: ICML, CVPR, ECCV, IJCAI and so on."
+      - "Conference Reviewer / Program Committee Member: ICML, CVPR, IJCAI and so on."
       - "Journal Reviewer: TPAMI, JMLR, TNNLS, and so on."
 ---
