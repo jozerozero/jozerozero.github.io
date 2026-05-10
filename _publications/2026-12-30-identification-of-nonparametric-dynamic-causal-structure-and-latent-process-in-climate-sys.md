@@ -1,5 +1,5 @@
 ---
-title: "Identification of nonparametric dynamic causal structure and latent process in climate system"
+title: "Learning General Causal Structures with Hidden Dynamic Process for Climate Analysis"
 collection: publications
 date: 2026-12-30
 venue: "ICML 2026"

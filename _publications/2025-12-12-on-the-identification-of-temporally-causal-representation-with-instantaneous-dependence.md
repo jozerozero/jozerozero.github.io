@@ -1,5 +1,5 @@
 ---
-title: "On the identification of temporally causal representation with instantaneous dependence"
+title: "On the Identification of Temporally Causal Representation with Instantaneous Dependence"
 collection: publications
 date: 2025-12-12
 venue: "ICLR 2025 Oral"

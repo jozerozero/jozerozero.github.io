@@ -1,5 +1,5 @@
 ---
-title: "Learning disentangled representation for multi-modal time-series sensing signals"
+title: "From Orthogonality to Dependency: Learning Disentangled Representation for Multi-Modal Time-Series Sensing Signals"
 collection: publications
 date: 2025-12-24
 venue: "Proceedings of the ACM Web Conference 2025"

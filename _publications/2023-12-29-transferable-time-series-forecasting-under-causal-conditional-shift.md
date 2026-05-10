@@ -1,5 +1,5 @@
 ---
-title: "Transferable time-series forecasting under causal conditional shift"
+title: "Transferable Time-Series Forecasting under Causal Conditional Shift"
 collection: publications
 date: 2023-12-29
 venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence"

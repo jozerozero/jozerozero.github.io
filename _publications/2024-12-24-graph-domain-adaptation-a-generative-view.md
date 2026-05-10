@@ -1,5 +1,5 @@
 ---
-title: "Graph domain adaptation: A generative view"
+title: "Graph Domain Adaptation: A Generative View"
 collection: publications
 date: 2024-12-24
 venue: "ACM Transactions on Knowledge Discovery from Data"

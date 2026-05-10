@@ -1,5 +1,5 @@
 ---
-title: "Time-series domain adaptation via sparse associative structure alignment: learning invariance and variance"
+title: "Time-Series Domain Adaptation via Sparse Associative Structure Alignment: Learning Invariance and Variance"
 collection: publications
 date: 2022-12-30
 venue: "Neural Networks"

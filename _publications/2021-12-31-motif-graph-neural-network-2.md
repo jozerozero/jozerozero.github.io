@@ -1,5 +1,5 @@
 ---
-title: "Motif graph neural network"
+title: "Motif Graph Neural Network"
 collection: publications
 date: 2021-12-31
 venue: "arXiv preprint arXiv:2112.14900"

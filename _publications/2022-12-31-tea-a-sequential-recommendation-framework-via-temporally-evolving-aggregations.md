@@ -1,5 +1,5 @@
 ---
-title: "TEA: A sequential recommendation framework via temporally evolving aggregations"
+title: "TEA: A Sequential Recommendation Framework via Temporally Evolving Aggregations"
 collection: publications
 date: 2022-12-31
 venue: "IEEE Transactions on Neural Networks and Learning Systems"

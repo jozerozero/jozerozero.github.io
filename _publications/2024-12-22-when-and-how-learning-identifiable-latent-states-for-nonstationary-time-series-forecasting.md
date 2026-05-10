@@ -1,5 +1,5 @@
 ---
-title: "When and how: Learning identifiable latent states for nonstationary time series forecasting"
+title: "Nonstationary Time Series Forecasting via Unknown Distribution Adaptation"
 collection: publications
 date: 2024-12-22
 venue: "arXiv preprint arXiv:2402.12767"

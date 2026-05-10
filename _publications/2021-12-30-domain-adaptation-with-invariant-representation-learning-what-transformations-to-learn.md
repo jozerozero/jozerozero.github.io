@@ -1,5 +1,5 @@
 ---
-title: "Domain adaptation with invariant representation learning: What transformations to learn?"
+title: "Domain Adaptation with Invariant Representation Learning: What Transformations to Learn?"
 collection: publications
 date: 2021-12-30
 venue: "NeurIPS 2021"
