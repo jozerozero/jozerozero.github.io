@@ -8,13 +8,7 @@
   <div class="minimal-publication__media">
     {% if teaser %}
       {% capture teaser_src %}{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | relative_url }}{% else %}{{ teaser | prepend: '/images/' | relative_url }}{% endif %}{% endcapture %}
-      {% if pub.paperurl %}
-        <a class="minimal-publication__image-link" href="{{ pub.paperurl }}">
-          <img src="{{ teaser_src | strip }}" alt="Figure from {{ pub.title }}">
-        </a>
-      {% else %}
-        <img src="{{ teaser_src | strip }}" alt="Figure from {{ pub.title }}">
-      {% endif %}
+      <img src="{{ teaser_src | strip }}" alt="Figure from {{ pub.title }}">
     {% else %}
       <span>{{ pub.venue | default: "Paper" | truncate: 18, "" }}</span>
     {% endif %}
@@ -33,7 +27,7 @@
     </div>
 
     <h3 class="minimal-publication__title">
-      <a href="{{ pub.url | relative_url }}">{{ title }}</a>
+      {{ title }}
     </h3>
 
     {% if pub.authors %}
