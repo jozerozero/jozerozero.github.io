@@ -28,6 +28,26 @@ layout: default
     </div>
   </section>
 
+  {% if page.services %}
+    <section class="minimal-home__section minimal-home__services-first" aria-labelledby="services-heading">
+      <div class="minimal-home__section-head">
+        <h2 id="services-heading">Services</h2>
+      </div>
+      <div class="minimal-services">
+        {% for group in page.services %}
+          <section>
+            <h3>{{ group.title }}</h3>
+            <ul>
+              {% for item in group.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
   {% if page.intro %}
     <section class="minimal-home__section minimal-home__intro">
       {% for paragraph in page.intro %}
@@ -101,23 +121,4 @@ layout: default
     {% endif %}
   </section>
 
-  {% if page.services %}
-    <section class="minimal-home__section" aria-labelledby="services-heading">
-      <div class="minimal-home__section-head">
-        <h2 id="services-heading">Services</h2>
-      </div>
-      <div class="minimal-services">
-        {% for group in page.services %}
-          <section>
-            <h3>{{ group.title }}</h3>
-            <ul>
-              {% for item in group.items %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </section>
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
 </main>

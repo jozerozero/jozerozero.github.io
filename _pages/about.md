@@ -10,7 +10,7 @@ profile:
   name: "Zijian Li (李梓健)"
   position: "Postdoctoral Researcher"
   affiliation:
-  avatar: "profile.png"
+  avatar: "profile-scholar.jpg"
 social_links:
   - label: "GitHub"
     url: "https://github.com/lizijian"
@@ -26,8 +26,6 @@ news:
     text: "1 paper on casaul representation learning are accepted by CVPR'2026."
   - date: "2026-01"
     text: "3 papers on casaul representation learning are accepted by ICLR'2026."
-  - date: "2026-01"
-    text: "3 papers on casaul representation learning are accepted by ICLR'2026."
   - date: "2025-10"
     text: "4 papers are accepted by NeurIPS'2026."
 
@@ -36,7 +34,6 @@ publication_limit: 15
 services:
   - title: "Professional Service"
     items:
-      - "Area Chair: for ICLR 2026, NeurIPS 2026."
-      - "Conference Reviewer / Program Committee Member: ICML, IJCAI, ECCV and so on."
-      - "Journal Reviewer: TPAMI, JMLR, TNNLS, and so on."
+      - "Conference and journal reviewing."
+      - "Program committee, artifact evaluation, and research community service."
 ---
