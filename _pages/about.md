@@ -34,6 +34,6 @@ publication_limit: 15
 services:
   - title: "Professional Service"
     items:
-      - "Conference and journal reviewing."
-      - "Program committee, artifact evaluation, and research community service."
+      - "Area Chair: for ICLR 2026, NeurIPS 2026."
+      - "Conference Reviewer / Program Committee Member: CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI, and so on."
 ---
