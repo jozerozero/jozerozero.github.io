@@ -201,45 +201,37 @@
 }
 
 .minimal-news {
-  margin: 0;
+  margin: 0.25rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .minimal-news li {
   display: grid;
-  grid-template-columns: 2rem 7.5rem minmax(0, 1fr);
-  gap: 0.85rem;
-  align-items: start;
-  margin: 0 0 0.65rem;
-  padding: 0.75rem 0.85rem;
+  grid-template-columns: 1.35rem 5.4rem minmax(0, 1fr);
+  gap: 0.55rem;
+  align-items: baseline;
+  margin: 0 0 0.45rem;
+  padding: 0.1rem 0;
   color: #2f343a;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+  line-height: 1.6;
 }
 
 .minimal-news__icon {
-  display: grid;
+  display: inline-grid;
   place-items: center;
-  width: 2rem;
-  height: 2rem;
-  background: #fff7ed;
-  border: 1px solid #fed7aa;
-  border-radius: 50%;
+  width: 1.35rem;
+  color: #b45309;
   line-height: 1;
 }
 
 .minimal-news time {
-  padding-top: 0.2rem;
-  color: #6b7280;
+  color: #111827;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
 }
 
 .minimal-news__text {
-  padding-top: 0.2rem;
   line-height: 1.55;
 }
 
@@ -470,8 +462,8 @@
   }
 
   .minimal-news li {
-    grid-template-columns: 2rem minmax(0, 1fr);
-    gap: 0.2rem 0.75rem;
+    grid-template-columns: 1.35rem minmax(0, 1fr);
+    gap: 0.1rem 0.55rem;
   }
 
   .minimal-news time,

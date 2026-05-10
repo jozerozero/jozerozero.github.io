@@ -118,7 +118,7 @@ layout: default
         {% for item in page.news %}
           <li>
             <span class="minimal-news__icon" aria-hidden="true">🍾</span>
-            <time>{{ item.date }}</time>
+            <time>{{ item.date | replace: "-", "." }}:</time>
             <span class="minimal-news__text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
           </li>
         {% endfor %}

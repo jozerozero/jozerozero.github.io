@@ -23,15 +23,15 @@ intro:
   - "My research interests include causal discovery and its applications， including time-series analysis, and transfer learning. My long-term research goal is to build reliable AI systems with causal-thinking capabilities—systems that go beyond correlation-based pattern recognition to uncover, reason about, and leverage the underlying causal mechanisms of complex environments. By integrating causal discovery, temporal modeling, and transfer learning, I aim to develop AI systems that are robust under distribution shifts, interpretable in their decisions, and capable of reliable generalization across domains, tasks, and changing environments."
 news:
   - date: "2026-05"
-    text: "2 papers on causal discovery and casaul representation learning are accepted by ICML'2026."
+    text: "2 papers on causal discovery and causal representation learning were accepted by ICML 2026."
   - date: "2026-04"
-    text: "1 paper on time-series forecasting are accepted by IJCAI'2026."
+    text: "1 paper on time-series forecasting was accepted by IJCAI 2026."
   - date: "2026-02"
-    text: "1 paper on casaul representation learning are accepted by CVPR'2026."
+    text: "1 paper on causal representation learning was accepted by CVPR 2026."
   - date: "2026-01"
-    text: "3 papers on casaul representation learning are accepted by ICLR'2026."
+    text: "3 papers on causal representation learning were accepted by ICLR 2026."
   - date: "2025-10"
-    text: "4 papers are accepted by NeurIPS'2026."
+    text: "4 papers were accepted by NeurIPS 2026."
 
 publications_title: "Selected Publications"
 publication_limit: 15
