@@ -1,0 +1,134 @@
+{
+  "2021-12-31-motif-graph-neural-network-2": {
+    "title": "Motif graph neural network",
+    "pdf_url": "https://arxiv.org/pdf/2112.14900.pdf",
+    "image": "publication-figures/2021-12-31-motif-graph-neural-network-2.png",
+    "selection": "page 1: Fig. 1. Toy example of the discriminative power of GNNs on two nodes A"
+  },
+  "2022-12-30-time-series-domain-adaptation-via-sparse-associative-structure-alignment-learning-invarian": {
+    "title": "Time-series domain adaptation via sparse associative structure alignment: learning invariance and variance",
+    "pdf_url": "https://arxiv.org/pdf/2205.03554",
+    "image": "publication-figures/2022-12-30-time-series-domain-adaptation-via-sparse-associative-structure-alignment-learning-invarian.png",
+    "selection": "page 1: Fig. 1."
+  },
+  "2022-12-31-tea-a-sequential-recommendation-framework-via-temporally-evolving-aggregations": {
+    "title": "TEA: A sequential recommendation framework via temporally evolving aggregations",
+    "pdf_url": "https://arxiv.org/pdf/2111.07378",
+    "image": "publication-figures/2022-12-31-tea-a-sequential-recommendation-framework-via-temporally-evolving-aggregations.png",
+    "selection": "page 5: Fig. 2: The framework of the temporally evolving aggregation model for the sequential recommendation. (a) The overview of the"
+  },
+  "2023-12-29-transferable-time-series-forecasting-under-causal-conditional-shift": {
+    "title": "Transferable time-series forecasting under causal conditional shift",
+    "pdf_url": "https://arxiv.org/pdf/2111.03422",
+    "image": "publication-figures/2023-12-29-transferable-time-series-forecasting-under-causal-conditional-shift.png",
+    "selection": "page 2: Figure 1. The illustration of different methods of time-series domain"
+  },
+  "2023-12-30-subspace-identification-for-multi-source-domain-adaptation": {
+    "title": "Subspace Identification for Multi-Source Domain Adaptation",
+    "pdf_url": "https://arxiv.org/pdf/2310.04723",
+    "image": "publication-figures/2023-12-30-subspace-identification-for-multi-source-domain-adaptation.png",
+    "selection": "page 2: Figure 1: Data generation process,"
+  },
+  "2024-12-22-when-and-how-learning-identifiable-latent-states-for-nonstationary-time-series-forecasting": {
+    "title": "When and how: Learning identifiable latent states for nonstationary time series forecasting",
+    "pdf_url": "https://arxiv.org/pdf/2402.12767.pdf",
+    "image": "publication-figures/2024-12-22-when-and-how-learning-identifiable-latent-states-for-nonstationary-time-series-forecasting.png",
+    "selection": "page 3: Figure 2.  Data generation process of nonstationary time series.  e t"
+  },
+  "2024-12-24-graph-domain-adaptation-a-generative-view": {
+    "title": "Graph domain adaptation: A generative view",
+    "pdf_url": "https://arxiv.org/pdf/2106.07482",
+    "image": "publication-figures/2024-12-24-graph-domain-adaptation-a-generative-view.png",
+    "selection": "page 2: Fig. 1. (a)-(c) Three observed graph structures from Twitter and Weibo. Each node denotes a user. The purple nodes denote the users who will retweet since"
+  },
+  "2024-12-31-causal-temporal-representation-learning-with-nonstationary-sparse-transition": {
+    "title": "Causal Temporal Representation Learning with Nonstationary Sparse Transition",
+    "pdf_url": "https://arxiv.org/pdf/2409.03142",
+    "image": "publication-figures/2024-12-31-causal-temporal-representation-learning-with-nonstationary-sparse-transition.png",
+    "selection": "page 2: Figure 1: Graphical model"
+  },
+  "2025-12-12-on-the-identification-of-temporally-causal-representation-with-instantaneous-dependence": {
+    "title": "On the identification of temporally causal representation with instantaneous dependence",
+    "pdf_url": "https://arxiv.org/pdf/2405.15325",
+    "image": "publication-figures/2025-12-12-on-the-identification-of-temporally-causal-representation-with-instantaneous-dependence.png",
+    "selection": "page 2: Figure 1: Three different data generation processes with time-delayed and instantaneous dependencies."
+  },
+  "2025-12-13-from-orthogonality-to-dependency-learning-disentangled-representation-for-multi-modal-time": {
+    "title": "From Orthogonality to Dependency: Learning Disentangled Representation for Multi-Modal Time-Series Sensing Signals",
+    "pdf_url": "https://arxiv.org/pdf/2405.16083",
+    "image": "publication-figures/2025-12-13-from-orthogonality-to-dependency-learning-disentangled-representation-for-multi-modal-time.png",
+    "selection": "page 2: Figure 1: Illustration of physiological indicators of diabetics,"
+  },
+  "2025-12-15-identification-of-nonparametric-dynamic-causal-structure-and-latent-process-in-climate-sys": {
+    "title": "Identification of nonparametric dynamic causal structure and latent process in climate system",
+    "pdf_url": "https://arxiv.org/pdf/2501.12500.pdf",
+    "image": "publication-figures/2025-12-15-identification-of-nonparametric-dynamic-causal-structure-and-latent-process-in-climate-sys.png",
+    "selection": "page 2: Figure 1: From climate system to causal graph.  x t  represent observed data and  z t  denotes unobserved"
+  },
+  "2025-12-19-disentangling-long-short-term-state-under-unknown-interventions-for-online-time-series-for": {
+    "title": "Disentangling Long-Short Term State Under Unknown Interventions for Online Time Series Forecasting",
+    "pdf_url": "https://arxiv.org/pdf/2502.12603.pdf",
+    "image": "publication-figures/2025-12-19-disentangling-long-short-term-state-under-unknown-interventions-for-online-time-series-for.png",
+    "selection": "page 5: Figure 2: The framework of the proposed  LSTD  model. The long/short-term latent variables  z d"
+  },
+  "2025-12-20-time-series-domain-adaptation-via-latent-invariant-causal-mechanism": {
+    "title": "Time Series Domain Adaptation via Latent Invariant Causal Mechanism",
+    "pdf_url": "https://arxiv.org/pdf/2502.16637",
+    "image": "publication-figures/2025-12-20-time-series-domain-adaptation-via-latent-invariant-causal-mechanism.png",
+    "selection": "page 2: Figure 1. A toy domain adaptation example for video data, where the blue arrows denote the estimated causal relationships. (a) Two three-frame"
+  },
+  "2025-12-21-synergy-between-sufficient-changes-and-sparse-mixing-procedure-for-disentangled-representa": {
+    "title": "Synergy Between Sufficient Changes and Sparse Mixing Procedure for Disentangled Representation Learning",
+    "pdf_url": "https://arxiv.org/pdf/2503.00639.pdf",
+    "image": "publication-figures/2025-12-21-synergy-between-sufficient-changes-and-sparse-mixing-procedure-for-disentangled-representa.png",
+    "selection": "page 4: Figure 1, which includes the ground truth and estimated data generation processes with aux-"
+  },
+  "2025-12-24-learning-disentangled-representation-for-multi-modal-time-series-sensing-signals": {
+    "title": "Learning disentangled representation for multi-modal time-series sensing signals",
+    "pdf_url": "https://arxiv.org/pdf/2405.16083",
+    "image": "publication-figures/2025-12-24-learning-disentangled-representation-for-multi-modal-time-series-sensing-signals.png",
+    "selection": "page 2: Figure 1: Illustration of physiological indicators of diabetics,"
+  },
+  "2025-12-26-causal-view-of-time-series-imputation-some-identification-results-on-missing-mechanism": {
+    "title": "Causal View of Time Series Imputation: Some Identification Results on Missing Mechanism",
+    "pdf_url": "https://arxiv.org/pdf/2505.07180",
+    "image": "publication-figures/2025-12-26-causal-view-of-time-series-imputation-some-identification-results-on-missing-mechanism.png",
+    "selection": "page 2: Figure 1: Data generation processes of time series data under different missing mechanisms.  z t  are temporal latent variables that describe"
+  },
+  "2025-12-28-identifying-semantic-component-for-robust-molecular-property-prediction": {
+    "title": "Identifying semantic component for robust molecular property prediction",
+    "pdf_url": "https://arxiv.org/pdf/2311.04837",
+    "image": "publication-figures/2025-12-28-identifying-semantic-component-for-robust-molecular-property-prediction.png",
+    "selection": "page 2: Figure 1. A molecule classification example with the functional groups  ( -COOH 2 )  and  ( -CF 3 ) . (a) The discriminative model considers the spurious"
+  },
+  "2025-12-29-towards-identifiability-of-hierarchical-temporal-causal-representation-learning": {
+    "title": "Towards Identifiability of Hierarchical Temporal Causal Representation Learning",
+    "pdf_url": "https://arxiv.org/pdf/2510.18310",
+    "image": "publication-figures/2025-12-29-towards-identifiability-of-hierarchical-temporal-causal-representation-learning.png",
+    "selection": "page 2: Figure 1: Illustration of data gen-"
+  },
+  "2025-12-30-online-time-series-forecasting-with-theoretical-guarantees": {
+    "title": "Online Time Series Forecasting with Theoretical Guarantees",
+    "pdf_url": "https://arxiv.org/pdf/2510.18281.pdf",
+    "image": "publication-figures/2025-12-30-online-time-series-forecasting-with-theoretical-guarantees.png",
+    "selection": "page 2: Figure 1: Illustration of the gen-"
+  },
+  "2026-12-29-diverse-dictionary-learning": {
+    "title": "Diverse Dictionary Learning",
+    "pdf_url": "http://arxiv.org/pdf/2604.17568v1.pdf",
+    "image": "publication-figures/2026-12-29-diverse-dictionary-learning.png",
+    "selection": "page 3: Figure 1: Example"
+  },
+  "2026-12-31-hierarchical-action-learning-for-weakly-supervised-action-segmentation": {
+    "title": "Hierarchical Action Learning for Weakly-Supervised Action Segmentation",
+    "pdf_url": "https://arxiv.org/pdf/2602.24275",
+    "image": "publication-figures/2026-12-31-hierarchical-action-learning-for-weakly-supervised-action-segmentation.png",
+    "selection": "page 2: Figure 1. An action segmentation example in the CrossTask dataset. (a) Real-world action videos exhibit different levels of representation,"
+  },
+  "2021-12-30-domain-adaptation-with-invariant-representation-learning-what-transformations-to-learn": {
+    "title": "Domain adaptation with invariant representation learning: What transformations to learn?",
+    "pdf_url": "https://proceedings.neurips.cc/paper/2021/file/cfc5d9422f0c8f8ad796711102dbe32b-Paper.pdf",
+    "image": "publication-figures/2021-12-30-domain-adaptation-with-invariant-representation-learning-what-transformations-to-learn.png",
+    "selection": "page 2: Figure 1:  The underlying data-"
+  }
+}

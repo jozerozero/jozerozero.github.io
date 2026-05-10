@@ -5,4 +5,6 @@ date: 2026-12-31
 venue: "CVPR 2026"
 authors: "Junxian Huang, Ruichu Cai, Hao Zhu, Juntao Fang, Boyan Xu, Weilin Chen, Zijian Li, Shenghua Gao"
 permalink: /publication/hierarchical-action-learning-for-weakly-supervised-action-segmentation
+thumbnail: "publication-figures/2026-12-31-hierarchical-action-learning-for-weakly-supervised-action-segmentation.png"
+paperurl: "https://arxiv.org/pdf/2602.24275"
 ---

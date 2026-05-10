@@ -5,9 +5,16 @@
 {% assign teaser = pub.thumbnail | default: pub.header.teaser | default: include.default_image | default: site.teaser %}
 
 <article class="minimal-publication">
-  <div class="minimal-publication__media" aria-hidden="true">
+  <div class="minimal-publication__media">
     {% if teaser %}
-      <img src="{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | relative_url }}{% else %}{{ teaser | prepend: '/images/' | relative_url }}{% endif %}" alt="">
+      {% capture teaser_src %}{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | relative_url }}{% else %}{{ teaser | prepend: '/images/' | relative_url }}{% endif %}{% endcapture %}
+      {% if pub.paperurl %}
+        <a class="minimal-publication__image-link" href="{{ pub.paperurl }}">
+          <img src="{{ teaser_src | strip }}" alt="Figure from {{ pub.title }}">
+        </a>
+      {% else %}
+        <img src="{{ teaser_src | strip }}" alt="Figure from {{ pub.title }}">
+      {% endif %}
     {% else %}
       <span>{{ pub.venue | default: "Paper" | truncate: 18, "" }}</span>
     {% endif %}
