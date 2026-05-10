@@ -28,12 +28,15 @@ news:
     text: "3 papers on casaul representation learning are accepted by ICLR'2026."
   - date: "2026-01"
     text: "3 papers on casaul representation learning are accepted by ICLR'2026."
+  - date: "2025-10"
+    text: "4 papers are accepted by NeurIPS'2026."
 
 publications_title: "Selected Publications"
 publication_limit: 15
 services:
   - title: "Professional Service"
     items:
-      - "Conference and journal reviewing."
-      - "Program committee, artifact evaluation, and research community service."
+      - "Area Chair: for ICLR 2026, NeurIPS 2026."
+      - "Conference Reviewer / Program Committee Member: ICML, IJCAI, ECCV and so on."
+      - "Journal Reviewer: TPAMI, JMLR, TNNLS, and so on."
 ---
