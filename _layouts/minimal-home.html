@@ -50,33 +50,6 @@ layout: default
     </div>
   </section>
 
-  {% if page.services %}
-    <section class="minimal-home__section minimal-home__services-first" aria-labelledby="services-heading">
-      <div class="minimal-home__section-head">
-        <h2 id="services-heading">
-          <span class="minimal-section-icon minimal-section-icon--services" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M4 7h16M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7m-9 4 2 2 4-4m-9-2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7" />
-            </svg>
-          </span>
-          Services
-        </h2>
-      </div>
-      <div class="minimal-services">
-        {% for group in page.services %}
-          <section>
-            <h3>{{ group.title }}</h3>
-            <ul>
-              {% for item in group.items %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </section>
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
-
   {% if page.intro %}
     <section class="minimal-home__section minimal-home__intro" aria-labelledby="about-heading">
       <div class="minimal-home__section-head minimal-home__section-head--compact">
@@ -123,6 +96,33 @@ layout: default
           </li>
         {% endfor %}
       </ol>
+    </section>
+  {% endif %}
+
+  {% if page.services %}
+    <section class="minimal-home__section minimal-home__services-first" aria-labelledby="services-heading">
+      <div class="minimal-home__section-head">
+        <h2 id="services-heading">
+          <span class="minimal-section-icon minimal-section-icon--services" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 7h16M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7m-9 4 2 2 4-4m-9-2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7" />
+            </svg>
+          </span>
+          Services
+        </h2>
+      </div>
+      <div class="minimal-services">
+        {% for group in page.services %}
+          <section>
+            <h3>{{ group.title }}</h3>
+            <ul>
+              {% for item in group.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </div>
     </section>
   {% endif %}
 
