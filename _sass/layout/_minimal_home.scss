@@ -4,50 +4,61 @@
 
 .minimal-home {
   width: calc(100% - 32px);
-  max-width: 920px;
-  margin: 3.25rem auto 4.5rem;
-  color: #202124;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: 1060px;
+  margin: 3rem auto 5rem;
+  color: #1b1a17;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f7f3ea;
 }
 
 .minimal-home a {
-  color: #1a5fb4;
+  color: #315f3c;
   text-decoration: none;
 }
 
 .minimal-home a:hover {
+  color: #111827;
   text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .minimal-home__hero {
   display: grid;
-  grid-template-columns: 144px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: 164px minmax(0, 1fr);
+  gap: 2.4rem;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid #1f2937;
 }
 
 .minimal-home__portrait img {
   display: block;
-  width: 144px;
-  height: 144px;
+  width: 164px;
+  height: 164px;
   object-fit: cover;
-  border: 1px solid #d7dce2;
-  border-radius: 8px;
+  border: 1px solid #1f2937;
+  border-radius: 0;
 }
 
 .minimal-home__identity h1 {
   margin: 0 0 0.35rem;
-  font-size: 2.45rem;
-  line-height: 1.08;
-  color: #111827;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 6vw, 4.7rem);
+  font-weight: 500;
+  line-height: 0.96;
+  color: #12100c;
+  letter-spacing: 0;
 }
 
 .minimal-home__position,
 .minimal-home__affiliation {
   margin: 0.15rem 0;
-  color: #4b5563;
-  font-size: 1rem;
+  color: #4a4841;
+  font-size: 0.98rem;
 }
 
 .minimal-home__links {
@@ -63,19 +74,18 @@
   align-items: center;
   gap: 0.45rem;
   min-height: 2rem;
-  padding: 0.24rem 0.72rem;
-  color: #1f2937;
-  background: #fff;
-  border: 1px solid #dfe3e8;
+  padding: 0.22rem 0.7rem;
+  color: #1b1a17;
+  background: transparent;
+  border: 1px solid #1f2937;
   border-radius: 999px;
-  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
   font-weight: 600;
 }
 
 .minimal-home__links a:hover {
-  color: #174a8b;
-  background: #f4f9ff;
-  border-color: #cfe0f5;
+  color: #f7f3ea;
+  background: #1b1a17;
+  border-color: #1b1a17;
   text-decoration: none;
 }
 
@@ -84,7 +94,7 @@
   place-items: center;
   width: 1.05rem;
   height: 1.05rem;
-  color: #2563eb;
+  color: currentColor;
 }
 
 .minimal-link-icon svg {
@@ -98,14 +108,17 @@
 }
 
 .minimal-home__section {
-  padding: 1.65rem 0;
-  border-top: 1px solid #e5e7eb;
+  padding: 2rem 0;
+  border-top: 1px solid #1f2937;
 }
 
 .minimal-home__section h2 {
   margin: 0;
-  color: #111827;
-  font-size: 1.45rem;
+  color: #12100c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .minimal-home__section-head {
@@ -128,11 +141,12 @@
   display: inline-grid;
   flex: 0 0 auto;
   place-items: center;
-  width: 2rem;
-  height: 2rem;
-  color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.1);
+  width: 1.85rem;
+  height: 1.85rem;
+  color: #1b1a17;
+  background: transparent !important;
+  border: 1px solid #1b1a17;
+  border-radius: 50%;
 }
 
 .minimal-section-icon svg {
@@ -146,19 +160,23 @@
 }
 
 .minimal-section-icon--about {
-  background: #6d5bd0;
+  color: #315f3c;
+  border-color: #315f3c;
 }
 
 .minimal-section-icon--services {
-  background: #0f766e;
+  color: #6d4a1f;
+  border-color: #6d4a1f;
 }
 
 .minimal-section-icon--news {
-  background: #b45309;
+  color: #9a3d22;
+  border-color: #9a3d22;
 }
 
 .minimal-section-icon--publications {
-  background: #2563eb;
+  color: #294b86;
+  border-color: #294b86;
 }
 
 .minimal-home__section-head--compact {
@@ -172,9 +190,9 @@
   align-items: center;
   min-height: 2rem;
   padding: 0.25rem 0.7rem;
-  color: #1f4f8f;
-  background: #eef6ff;
-  border: 1px solid #d7e8fb;
+  color: #1b1a17;
+  background: transparent;
+  border: 1px solid #1b1a17;
   border-radius: 999px;
   font-size: 0.94rem;
   font-weight: 600;
@@ -182,8 +200,8 @@
 
 .minimal-home__section-head > a:hover,
 .minimal-home__section-action:hover {
-  color: #173f73;
-  background: #e1efff;
+  color: #f7f3ea;
+  background: #1b1a17;
   text-decoration: none;
 }
 
@@ -195,9 +213,10 @@
 .minimal-home__intro p,
 .minimal-home__content p {
   margin: 0 0 1rem;
-  color: #2f343a;
-  font-size: 1rem;
-  line-height: 1.7;
+  max-width: 880px;
+  color: #25231f;
+  font-size: 1.02rem;
+  line-height: 1.78;
 }
 
 .minimal-news {
@@ -213,7 +232,7 @@
   align-items: baseline;
   margin: 0 0 0.45rem;
   padding: 0.1rem 0;
-  color: #2f343a;
+  color: #25231f;
   line-height: 1.6;
 }
 
@@ -226,7 +245,7 @@
 }
 
 .minimal-news time {
-  color: #111827;
+  color: #12100c;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
 }
@@ -237,7 +256,8 @@
 
 .minimal-publications {
   display: grid;
-  gap: 1.25rem;
+  gap: 0;
+  border-bottom: 1px solid #1f2937;
 }
 
 .minimal-publications--year {
@@ -246,8 +266,10 @@
 
 .minimal-year {
   margin: 0 0 1rem;
-  color: #111827;
-  font-size: 1.2rem;
+  color: #12100c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
 }
 
 .minimal-year:not(:first-of-type) {
@@ -256,21 +278,17 @@
 
 .minimal-publication {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 1.15rem;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 1.6rem;
   align-items: start;
-  padding: 0.9rem;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
-  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  padding: 1.35rem 0;
+  background: transparent;
+  border-top: 1px solid #1f2937;
+  transition: background 160ms ease;
 }
 
 .minimal-publication:hover {
-  border-color: #cfd8e3;
-  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .minimal-publication__media {
@@ -279,10 +297,10 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  color: #6b7280;
-  background: #f8fafc;
-  border: 1px solid #dfe3e8;
-  border-radius: 6px;
+  color: #4a4841;
+  background: transparent;
+  border: 1px solid #1f2937;
+  border-radius: 0;
   font-size: 0.85rem;
   text-align: center;
 }
@@ -299,7 +317,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 0.35rem;
+  padding: 0;
   object-fit: contain;
 }
 
@@ -313,37 +331,41 @@
   gap: 0.45rem;
   align-items: center;
   margin-bottom: 0.25rem;
-  color: #6b7280;
-  font-size: 0.83rem;
+  color: #59564d;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .minimal-publication__badge {
   display: inline-flex;
   align-items: center;
   min-height: 1.35rem;
-  padding: 0 0.45rem;
-  color: #0f766e;
-  background: #ecfdf5;
-  border: 1px solid #ccebdd;
+  padding: 0;
+  color: #315f3c;
+  background: transparent;
+  border: 0;
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .minimal-publication__title {
-  margin: 0 0 0.25rem;
-  font-size: 1.05rem;
-  line-height: 1.35;
+  margin: 0 0 0.35rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1.22;
 }
 
 .minimal-publication__title a {
-  color: #111827;
+  color: #12100c;
 }
 
 .minimal-publication__authors,
 .minimal-publication__excerpt,
 .minimal-publication__award {
   margin: 0 0 0.35rem;
-  color: #4b5563;
+  color: #3f3c36;
   font-size: 0.94rem;
   line-height: 1.55;
 }
@@ -353,7 +375,7 @@
 }
 
 .minimal-publication__self {
-  color: #111827;
+  color: #12100c;
   font-weight: 800;
 }
 
@@ -362,7 +384,7 @@
 }
 
 .minimal-publication__award {
-  color: #b45309;
+  color: #9a3d22;
   font-weight: 700;
 }
 
@@ -377,17 +399,18 @@
   display: inline-flex;
   align-items: center;
   min-height: 1.7rem;
-  padding: 0.12rem 0.55rem;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  padding: 0;
+  color: #315f3c;
+  background: transparent;
+  border: 0;
   border-radius: 999px;
   font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .minimal-publication__links a:hover {
-  background: #eef6ff;
-  border-color: #d7e8fb;
-  text-decoration: none;
+  color: #12100c;
 }
 
 .minimal-empty {
@@ -404,17 +427,16 @@
   display: flex;
   gap: 0.75rem;
   align-items: baseline;
-  padding: 0.8rem 0.95rem;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
 
 .minimal-services h3 {
   flex: 0 0 auto;
   margin: 0;
-  color: #111827;
+  color: #12100c;
   font-size: 1rem;
 }
 
@@ -429,7 +451,7 @@
 
 .minimal-services li {
   margin: 0;
-  color: #374151;
+  color: #3f3c36;
   line-height: 1.5;
   white-space: nowrap;
 }
@@ -449,9 +471,9 @@
   display: inline-block;
   width: 0.65rem;
   height: 0.65rem;
-  background: #2563eb;
+  background: #315f3c;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #dbeafe;
+  box-shadow: 0 0 0 4px rgba(49, 95, 60, 0.12);
 }
 
 @media (max-width: 720px) {
