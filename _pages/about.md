@@ -13,7 +13,9 @@ profile:
   avatar: "profile-scholar.jpg"
 social_links:
   - label: "GitHub"
-    url: "https://github.com/lizijian"
+    url: "https://github.com/jozerozero"
+  - label: "E-mail"
+    url: "mailto:leizigin@gmail.com"
 intro:
   - "Hi! I’m Zijian Li, a postdoctoral researcher at MBZUAI/Carnegie Mellon University, advised by Prof. Kun Zhang. Before that, I received my Ph.D. from Guangdong University of Technology, where I was advised by Prof. Ruichu Cai. I have had the privilege of interning at YITU Technology, WeChat, and the Advanced Digital Sciences Center (ADSC) in Singapore."
   - "My research interests include causal discovery and its applications， including time-series analysis, and transfer learning. My long-term research goal is to build reliable AI systems with causal-thinking capabilities—systems that go beyond correlation-based pattern recognition to uncover, reason about, and leverage the underlying causal mechanisms of complex environments. By integrating causal discovery, temporal modeling, and transfer learning, I aim to develop AI systems that are robust under distribution shifts, interpretable in their decisions, and capable of reliable generalization across domains, tasks, and changing environments."

@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .page__footer {
+  display: none;
   @include clearfix;
   background-color: var(--global-footer-bg-color);
   color: var(--global-text-color-light);
