@@ -1,0 +1,54 @@
+{% include base_path %}
+
+{% assign pub = include.post %}
+{% assign title = pub.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign teaser = pub.thumbnail | default: pub.header.teaser | default: include.default_image | default: site.teaser %}
+
+<article class="minimal-publication">
+  <div class="minimal-publication__media" aria-hidden="true">
+    {% if teaser %}
+      <img src="{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | relative_url }}{% else %}{{ teaser | prepend: '/images/' | relative_url }}{% endif %}" alt="">
+    {% else %}
+      <span>{{ pub.venue | default: "Paper" | truncate: 18, "" }}</span>
+    {% endif %}
+  </div>
+
+  <div class="minimal-publication__body">
+    <div class="minimal-publication__meta">
+      {% if pub.badge %}
+        <span class="minimal-publication__badge">{{ pub.badge }}</span>
+      {% elsif pub.venue %}
+        <span class="minimal-publication__badge">{{ pub.venue }}</span>
+      {% endif %}
+      {% if pub.date %}
+        <span>{{ pub.date | date: "%Y" }}</span>
+      {% endif %}
+    </div>
+
+    <h3 class="minimal-publication__title">
+      <a href="{{ pub.url | relative_url }}">{{ title }}</a>
+    </h3>
+
+    {% if pub.authors %}
+      <p class="minimal-publication__authors">{{ pub.authors }}</p>
+    {% elsif pub.citation %}
+      <p class="minimal-publication__authors">{{ pub.citation }}</p>
+    {% endif %}
+
+    {% if pub.excerpt %}
+      <div class="minimal-publication__excerpt">{{ pub.excerpt | markdownify }}</div>
+    {% endif %}
+
+    {% if pub.award %}
+      <p class="minimal-publication__award">{{ pub.award }}</p>
+    {% endif %}
+
+    <div class="minimal-publication__links">
+      {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+      {% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code</a>{% endif %}
+      {% if pub.projecturl %}<a href="{{ pub.projecturl }}">Project</a>{% endif %}
+      {% if pub.slidesurl %}<a href="{{ pub.slidesurl }}">Slides</a>{% endif %}
+      {% if pub.bibtexurl %}<a href="{{ pub.bibtexurl }}">BibTeX</a>{% endif %}
+    </div>
+  </div>
+</article>

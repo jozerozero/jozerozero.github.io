@@ -1,0 +1,123 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main class="minimal-home" role="main">
+  <section class="minimal-home__hero" aria-labelledby="profile-name">
+    <div class="minimal-home__portrait">
+      {% assign avatar = page.profile.avatar | default: site.author.avatar %}
+      {% if avatar %}
+        <img src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ avatar | prepend: '/images/' | relative_url }}{% endif %}" alt="{{ page.profile.name | default: site.author.name }}">
+      {% endif %}
+    </div>
+
+    <div class="minimal-home__identity">
+      <h1 id="profile-name">{{ page.profile.name | default: site.author.name }}</h1>
+      {% if page.profile.position %}<p class="minimal-home__position">{{ page.profile.position }}</p>{% endif %}
+      {% if page.profile.affiliation %}<p class="minimal-home__affiliation">{{ page.profile.affiliation }}</p>{% endif %}
+
+      {% if page.social_links %}
+        <nav class="minimal-home__links" aria-label="Profile links">
+          {% for item in page.social_links %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          {% endfor %}
+        </nav>
+      {% endif %}
+    </div>
+  </section>
+
+  {% if page.intro %}
+    <section class="minimal-home__section minimal-home__intro">
+      {% for paragraph in page.intro %}
+        <p>{{ paragraph | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  {% assign page_content = content | strip %}
+  {% if page_content != "" %}
+    <section class="minimal-home__section minimal-home__content">
+      {{ content }}
+    </section>
+  {% endif %}
+
+  {% if page.news %}
+    <section class="minimal-home__section" aria-labelledby="news-heading">
+      <div class="minimal-home__section-head">
+        <h2 id="news-heading">News</h2>
+      </div>
+      <ol class="minimal-news">
+        {% for item in page.news %}
+          <li>
+            <time>{{ item.date }}</time>
+            <span>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
+
+  <section class="minimal-home__section" aria-labelledby="publications-heading">
+    <div class="minimal-home__section-head">
+      <h2 id="publications-heading">{{ page.publications_title | default: "Publications" }}</h2>
+      <a href="{{ '/publications/' | relative_url }}">All papers</a>
+    </div>
+
+    {% assign sorted_publications = site.publications | sort: "date" | reverse %}
+    {% assign selected_count = 0 %}
+    {% assign real_count = 0 %}
+    {% for post in sorted_publications %}
+      {% if post.title contains "Paper Title Number" %}
+        {% continue %}
+      {% endif %}
+      {% assign real_count = real_count | plus: 1 %}
+      {% if post.selected == true or post.selected == "true" %}
+        {% assign selected_count = selected_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if real_count > 0 %}
+      <div class="minimal-publications">
+        {% assign rendered_publications = 0 %}
+        {% assign publication_limit = page.publication_limit | default: 6 %}
+        {% for post in sorted_publications %}
+          {% if post.title contains "Paper Title Number" %}
+            {% continue %}
+          {% endif %}
+          {% if selected_count > 0 and post.selected != true and post.selected != "true" %}
+            {% continue %}
+          {% endif %}
+          {% if rendered_publications >= publication_limit %}
+            {% break %}
+          {% endif %}
+          {% include minimal-publication.html post=post default_image=page.default_publication_image %}
+          {% assign rendered_publications = rendered_publications | plus: 1 %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="minimal-empty">Add your papers as Markdown files in <code>_publications/</code>. The default AcademicPages demo papers are hidden from this homepage.</p>
+    {% endif %}
+  </section>
+
+  {% if page.services %}
+    <section class="minimal-home__section" aria-labelledby="services-heading">
+      <div class="minimal-home__section-head">
+        <h2 id="services-heading">Services</h2>
+      </div>
+      <div class="minimal-services">
+        {% for group in page.services %}
+          <section>
+            <h3>{{ group.title }}</h3>
+            <ul>
+              {% for item in group.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+</main>
